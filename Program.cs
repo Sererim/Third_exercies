@@ -1,13 +1,14 @@
 ﻿int Main()
 {
-    Homework.Palindrome();
-
+    Distance AandB = new Distance();
+    
+    
     return 0;
 }
 Main();
 class Homework
 {
-    static public void Palindrome(string num = "19321")
+    static public void Palindrome(string num = "12321")
     {
         Console.WriteLine(num.Length);
         int leng = num.Length - 1;
@@ -17,9 +18,7 @@ class Homework
                 leng--;
             else
                 break;
-            Console.WriteLine($"{i} | {leng}");
         }
-        Console.WriteLine(leng);
         if(leng == 0)
             Console.WriteLine("Number is palindrome.");
         else
@@ -38,9 +37,16 @@ class Homework
 class Distance
 {
 
-    public double[] A = {1f,2f,3f};
-    public double[] B = {1f,2f,3f};
-    public Distance()
+    public double[] A;
+    public double[] B;
+
+
+    public Distance(double[] vecA, double[] vecB)
+    {
+        A = vecA;
+        B = vecB;
+    }
+    public void SetDistance()
     {
         string num = "NULL";
         Console.WriteLine("Enter the coordinates of the first point in 3D space.");
@@ -65,4 +71,9 @@ class Distance
         return d;
     }
 
+}
+
+class LookForPalindrome
+{
+    
 }
