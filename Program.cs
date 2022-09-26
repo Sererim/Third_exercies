@@ -53,7 +53,7 @@ int Main()
                 }
 
                 Distance r = new Distance(A,B);
-                Console.WriteLine($"The distance between two points in 3D space is {r.GetDistance}");
+                Console.WriteLine($"The distance between two points in 3D space is {r.GetDistance()}");
                 break;
 
             case "0":
@@ -66,7 +66,6 @@ int Main()
 
 
     }    
-    return 0;
 }
 Main();
 class Homework
